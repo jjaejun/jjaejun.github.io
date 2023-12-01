@@ -44,26 +44,3 @@ body {
     justify-content: center;
     display: inline-block;
 }
-
-#welcome {
-    width: 50%;
-    height: 70%;
-    background-color: white;
-    border: white;
-    font-size: 30px;
-}
-
-#buttonLogin {
-    background-color: white;
-    border: 0;
-    font-size: 30px;
-    float: left;
-}
-
-#buttonJoin {
-    background-color: white;
-    border: 0;
-    font-size: 30px;
-    float: right;
-    top: 85%;
-}

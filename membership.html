@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 page</title>
+    <link rel="stylesheet" href="css/membership.css">
+</head>
+<body>
+    <div id="outside">
+        <div id="inside">
+            <form name="membership" action="javascript:joinMembership();">
+                <table>
+                    <tr>
+                        <th><label for="memberId">아이디</label></th>
+                        <td><input type="text" name="memberId" id="memberId" placeholder="아이디" required></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td id="warningId"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="password">비밀번호</label></th>
+                        <td><input type="password" name="password" id="password" placeholder="비밀번호" required></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td id="warningPassword"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="email">이메일</label></th>
+                        <td><input type="email" name="email" id="email" placeholder="[선택] 이메일"></td>
+                    </tr>
+                    <tr></tr>
+                    <tr>
+                        <th><label for="memberName">이름</label></th>
+                        <td><input type="text" name="memberName" id="memberName" placeholder="이름" required></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td id="warningName"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="birthday">생년월일</label></th>
+                        <td><input type="text" name="birthday" id="birthday" placeholder="생년월일 (8자리)", required></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td id="warningBirthday"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="phone">전화번호</label></th>
+                        <td><input type="text" name="phone" id="phone" placeholder="전화번호 ('-' 제외)", required></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td id="warningPhone"></td>
+                    </tr>
+                    <tr>
+                        <td><button type="submit">저장</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+    
+
+    <script src="js/membership.js"></script>
+</body>
+</html>
