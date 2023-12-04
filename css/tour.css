@@ -44,3 +44,54 @@ body {
     justify-content: center;
     display: inline-block;
 }
+
+#java {
+    background-image: url(../images/java.png);
+    width: 100px;
+    height: 100px;
+  }
+#oracle {
+    background-image: url(../images/oracle.png);
+    width: 100px;
+    height: 100px;
+  }
+#html {
+    background-image: url(../images/html.png);
+    width: 100px;
+    height: 100px;
+  }
+#css {
+    background-image: url(../images/css.png);
+    width: 100px;
+    height: 100px;
+  }
+#js {
+    background-image: url(../images/js.png);
+    width: 100px;
+    height: 100px;
+  }
+#jquery {
+    background-image: url(../images/jquery.png);
+    width: 100px;
+    height: 100px;
+  }
+#react {
+    background-image: url(../images/react.png);
+    width: 100px;
+    height: 100px;
+  }
+#servlet {
+    background-image: url(../images/servlet.png);
+    width: 100px;
+    height: 100px;
+  }
+#jsp {
+    background-image: url(../images/jsp.png);
+    width: 100px;
+    height: 100px;
+  }
+#springframework {
+    background-image: url(../images/springframework.png);
+    width: 100px;
+    height: 100px;
+  }

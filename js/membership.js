@@ -16,15 +16,30 @@ const joinMembership = () => {
     members.push(new Member(memberId.value, password.value, email.value, memberName.value, birthday.value, phone.value));
     console.log(members);
 
-    localStorage.setItem(memberId.value, JSON.stringify(members));
+    localStorage.setItem('members', JSON.stringify(members));
 
     // 초기화
-    frm.reset();
+    document.membership.reset();
 };
 
 const renderMembersList = () => {
     // localStorage에서 guestbooks 읽어오기
     const members = JSON.parse(localStorage.getItem("members")) || [];
+
+    document.querySelector("table#membersList tbody").innerHTML =
+    members.reduce((html, {memberId, password, email, memberName, birthday, phone, createdAt}, index) => {
+        return `
+            ${html}
+            <tr>
+                <td>${memberId}</td>
+                <td>${password}</td>
+                <td>${email}</td>
+                <td>${memberName}</td>
+                <td>${birthday}</td>
+                <td>${phone}</td>
+                <td>${convertToDateTime(createdAt)}</td>
+            </tr>`;
+    }, "");
 };
 
 const fillBlank = (n) => n < 10 ? '0' + n : n;
