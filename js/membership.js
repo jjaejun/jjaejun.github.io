@@ -18,6 +18,8 @@ const joinMembership = () => {
 
     localStorage.setItem('members', JSON.stringify(members));
 
+    alert("회원가입 완료!!");
+
     // 초기화
     document.membership.reset();
 };
