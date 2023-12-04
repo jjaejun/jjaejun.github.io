@@ -167,7 +167,8 @@ const goRoadmap = () => {
 const goMembers = () => {
     const box = document.querySelector("#inside");
 
-    box.innerHTML = `<table id="membersList">
+    box.innerHTML = `<button id="rerere" onclick="renderMembersList();">새로고침</button><br>
+    <table id="membersList">
     <thead>
         <tr>
             <th>아이디</th>

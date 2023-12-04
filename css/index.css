@@ -110,6 +110,10 @@ body {
     width: 80vw;
 }
 
+#rerere {
+    display: inline-block;
+}
+
 /* * {box-sizing: border-box} */
 body {font-family: Verdana, sans-serif; margin:0}
 .mySlides {display: none}
